@@ -16,11 +16,18 @@
 
 .upload-area .upload-icon {
   width: 120px;
+  position: relative;
+  z-index: 2;
+}
+
+.upload-area .upload-icon,
+.upload-area label {
+  cursor: pointer;
 }
 
 .upload-area .upload-input {
   opacity: 0;
-  font-size: 15rem;
+  font-size: 25rem;
   position: absolute;
   z-index: 2;
   left: 0;
@@ -46,4 +53,8 @@
 
 .upload-area .upload-info h2:hover {
   color: rgb(14, 165, 233);
+}
+
+.upload-area .progress {
+  font-size: 14px;
 }
